@@ -1,0 +1,89 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #1a1a2e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+  color: white;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.payment-method label {
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.payment-method input {
+  margin-right: 10px;
+}
+
+.card-details {
+  background-color: #2d2d44;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.card-details label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.card-details input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #1a1a2e;
+  color: rgb(6, 100, 2);
+}
+
+.pay-button {
+  background-color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pay-button:disabled {
+  background-color: #4c9dbb;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

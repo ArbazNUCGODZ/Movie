@@ -1,0 +1,82 @@
+/* PageNav.module.css */
+
+/* Navigation Bar Container */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(132, 132, 233); /* Background color */
+  padding: 10px 20px; /* Add padding inside the navbar */
+  margin: 10px 5px; /* Add margin around the navbar */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Navigation List */
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Adjust gap between items */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Navigation Links */
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: white; /* Text color */
+  text-transform: uppercase;
+  font-size: 1.6rem; /* Font size */
+  font-weight: 600;
+  padding: 1rem 2.5rem; /* Padding for links */
+  border-radius: 8px; /* Rounded corners for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Active Link */
+.nav a.active {
+  color: var(--color-brand--2); /* Highlight color for active link */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Background color for active link */
+}
+
+/* CTA Links */
+
+a.ctaLink {
+  background-color: var(--color-brand--2); /* Background color for CTA links */
+  color: white; /* Text color for CTA links */
+  padding: 1rem 3rem; /* Padding for CTA links */
+  border-radius: 7px; /* Rounded corners */
+  font-size: 1.6rem;
+}
+a.ctaLink:hover {
+  background-color: rgba(92, 255, 70, 0.551); /* Background color on hover */
+  color: var(--color-brand--3); /* Text color on hover */
+}
+
+
+/* Logout Button */
+button.ctaLink {
+  background-color: var(
+    --color-brand--2
+  ); /* Background color for Logout button */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 1rem 3rem; /* Padding for Logout button */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.6rem;
+}
+
+/* Hover Effects */
+/* .nav a:hover, */
+button.ctaLink:hover {
+  background-color: rgba(92, 255, 70, 0.551); /* Background color on hover */
+  color: var(--color-brand--3); /* Text color on hover */
+}

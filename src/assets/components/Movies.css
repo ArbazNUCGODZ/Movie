@@ -1,0 +1,111 @@
+.trending-movies-container {
+  padding: 20px;
+  background-color: #333;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-and-filter {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header input {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+}
+
+.header button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.header select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.movie-card:hover img {
+  opacity: 0.8;
+}
+
+.movie-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px; /* Adjust height as needed */
+}
+
+.movie-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color:#ccc;
+  transition: color 0.3s;
+}
+
+.movie-card:hover .movie-title {
+  color: #007bff;
+}
+
+.release-date {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.select-button {
+  margin-top: auto;
+  padding: 5px 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.select-button:hover {
+  background-color: #218838;
+}

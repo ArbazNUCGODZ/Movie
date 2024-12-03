@@ -1,0 +1,137 @@
+.movie-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+}
+
+.movie-details,
+.movie-form {
+  width: 50%;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.movie-details img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.movie-details strong {
+  font-weight: bold;
+}
+
+.movie-details .back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.movie-details .back-button:hover {
+  background-color: #0056b3;
+}
+
+.movie-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.movie-form .form-group {
+  margin-bottom: 15px;
+}
+
+.movie-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.movie-form input,
+.movie-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.movie-form .error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.movie-form .seats-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
+
+.movie-form .seat {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.movie-form .seat.selected {
+  background-color: #007bff;
+}
+
+.movie-form .submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  margin-left: 40%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.movie-form .submit-button:hover {
+  background-color: #218838;
+}
+
+.seat.booked {
+  background-color: red; /* Example color for booked seats */
+  pointer-events: none; /* Prevent clicking on booked seats */
+}
